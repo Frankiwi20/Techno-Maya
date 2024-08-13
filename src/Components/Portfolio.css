@@ -1,0 +1,40 @@
+/* Portfolio.css */
+
+.portfolio-wrapper {
+    background-color: Ivory; /* Match the background color with other pages */
+    padding: 60px; /* Add padding for space around content */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #B2AC88; /* Consistent border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1400px; /* Control max width */
+    margin: 150px auto 40px; /* Center container with auto margins */
+    color: #FF5722; /* Use consistent text color */
+    text-align: center;
+}
+
+.portfolio-container h1 {
+    color: #FF5722; /* Match heading color */
+    margin-bottom: 20px;
+}
+
+.portfolio-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #FF5722; /* Match paragraph text color */
+}
+
+.portfolio-preview {
+    background-color: #F5F5F5; /* Slightly greyed-out background for the preview */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 40px;
+}
+
+.coming-soon {
+    font-size: 22px;
+    color: #888; /* Greyed out text color */
+    font-style: italic;
+    margin-top: 30px;
+}

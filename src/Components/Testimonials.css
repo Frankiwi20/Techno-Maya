@@ -1,0 +1,32 @@
+/* Testimonial.css */
+
+.testimonial-wrapper {
+    background-color: Ivory; /* Match the background color with other pages */
+    padding: 60px; /* Add padding for space around content */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #B2AC88; /* Consistent border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1400px; /* Control max width */
+    margin: 150px auto 40px; /* Center container with auto margins */
+    color: #FF5722; /* Use consistent text color */
+    text-align: center;
+}
+
+.testimonial-container h1 {
+    color: #FF5722; /* Match heading color */
+    margin-bottom: 20px;
+}
+
+.testimonial-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #FF5722; /* Match paragraph text color */
+}
+
+.coming-soon {
+    font-size: 22px;
+    color: #888; /* Greyed out text color */
+    font-style: italic;
+    margin-top: 30px;
+}

@@ -1,0 +1,27 @@
+/* Global Styles in App.css */
+
+body {
+  margin: 0;
+  background-color: Ivory; /* Sky Blue (Guatemalan Flag Blue) background */
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FF5722;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: #FF5722; /* Sky Blue for headings */
+
+}
+
+.cta-button {
+  background-color: Ivory; /* Sky Blue for buttons */
+  color: #FF5722;
+}
+
+.cta-button:hover {
+  background-color: #FF5722; /* Darker Sky Blue for hover */
+  color:Ivory;
+}
+

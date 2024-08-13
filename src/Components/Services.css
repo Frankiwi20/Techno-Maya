@@ -1,0 +1,111 @@
+/* src/components/Services.css */
+
+.services-wrapper {
+    background-color: Ivory; /* Ivory background for the wrapper */
+    padding: 60px; /* Increase padding for a bigger appearance */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #B2AC88; /* Define border with color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1400px; /* Increase the max-width to make it wider */
+    margin: 100px auto 40px; /* Center the container with auto margins */
+    text-align: center; /* Center align all text in the wrapper */
+}
+
+.services-container {
+    padding: 50px;
+    color: #FF5722; /* Use the same color for text as in LandingPage */
+    font-family: 'Arial', sans-serif;
+    background-color: Ivory; /* Background color */
+}
+
+.services-header {
+    margin-top: 0px;
+    margin-bottom: 40px; /* Increase bottom margin for more spacing */
+    color: #FF5722; /* Use the same color for the header */
+}
+
+.services-header h1 {
+    font-size: 2.5em; /* Adjust font size for a more refined appearance */
+    margin-bottom: 10px; /* Tighten spacing for a cleaner look */
+    font-weight: 600; /* Use a slightly less bold weight */
+    letter-spacing: 1px; /* Slightly increase letter spacing for clarity */
+    text-transform: uppercase; /* Use uppercase for a stronger impact */
+}
+
+.services-header p {
+    font-size: 1.2em; /* Adjust font size for balance */
+    margin-top: 10px;
+    color: #FF5722; /* Consistent text color */
+    max-width: 700px; /* Limit the width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the paragraph */
+    line-height: 1.4; /* Adjust line height for readability */
+    font-weight: 400; /* Make the tagline text lighter */
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Distribute items evenly */
+    margin-bottom: 60px; /* Add space between the main services and future services */
+    gap: 20px;
+}
+
+.service-item {
+    background-color: Ivory; /* Container background to match project styling */
+    padding: 30px; /* Increase padding for a more spacious look */
+    border-radius: 15px; /* Increase border-radius for a softer look */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Adjust shadow for more depth */
+    flex: 1 1 calc(33.333% - 20px); /* Adjust to fit three items per row */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #FF5722; /* Set text color to match the theme */
+    border: 2px solid #B2AC88; /* Use the same border color */
+    min-width: 300px; /* Ensure the items do not get too small */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+    background-color: #F5F5F5; /* Subtle background color change on hover */
+}
+
+.service-item h2 {
+    font-size: 2em; /* Increase font size for the service title */
+    margin-bottom: 20px;
+    color: #FF5722; /* Match h2 text color */
+    font-weight: bold; /* Make the service title bold */
+}
+
+.service-item p {
+    font-size: 1.2em; /* Increase paragraph font size for readability */
+    color: #FF5722; /* Match paragraph text color */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* Future Services Section */
+.future-services {
+    margin-top: 60px; /* Space above the future services */
+    padding-top: 40px; /* Padding at the top */
+    border-top: 2px dotted #FF5722; /* Dotted line separating future services */
+    display: flex;
+    justify-content: center;
+}
+
+.future-service-item {
+    background-color: Ivory;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Center the future service item */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #FF5722;
+    border: 2px solid #B2AC88;
+}
+
+.future-service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #F5F5F5;
+}

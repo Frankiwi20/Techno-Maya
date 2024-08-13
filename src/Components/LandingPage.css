@@ -1,0 +1,101 @@
+/* LandingPage.css */
+
+#particles-js {
+    position: fixed; /* Fixed position so it stays as the background */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's behind all other content */
+    background-color: Ivory; /* Match with your page background if needed */
+}
+
+.home-container {
+    position: relative; /* Ensure it sits above the particle effect */
+    background-color: Ivory;
+    padding: 110px;
+    border-radius: 8px;
+    border: 2px solid #B2AC88;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    margin: 100px auto 40px;
+    overflow: hidden;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #FF5722;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-intro p {
+    font-size: 1.2rem;
+    color: #FF5722;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: Ivory;
+    color: #FF5722;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 2px solid #B2AC88;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #B2AC88;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.home-features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px; /* Adding gap between feature items */
+}
+
+.feature-item {
+    background-color: Ivory;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    text-align: center;
+    border: 2px solid #B2AC88;
+    outline: 4px solid #B2AC88;
+    outline-offset: -8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.feature-item h3 {
+    color: #FF5722;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #FF5722;
+}
+
+.support-link {
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+    color: #FF5722;
+}

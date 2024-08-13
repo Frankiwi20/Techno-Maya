@@ -1,0 +1,60 @@
+/* Pricing.css */
+
+.pricing-wrapper {
+    background-color: Ivory; /* Match the background color with other pages */
+    padding: 60px; /* Add padding for space around content */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #B2AC88; /* Consistent border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1400px; /* Control max width */
+    margin: 150px auto 40px; /* Center container with auto margins */
+    color: #FF5722; /* Use consistent text color */
+}
+
+.pricing-container h1 {
+    color: #FF5722; /* Match heading color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    color: #FF5722; /* Match subheading color */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pricing-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #FF5722; /* Match paragraph text color */
+}
+
+.pricing-contact {
+    background-color: #B2AC88; /* Use a contrasting background color */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the contact section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pricing-contact h3 {
+    color: Ivory; /* Invert text color to contrast with the background */
+    margin-bottom: 10px;
+}
+
+.pricing-contact p {
+    font-size: 16px;
+    color: Ivory; /* Invert text color for contrast */
+}
+
+.pricing-contact a {
+    color: Ivory; /* Inherit color for links */
+    text-decoration: underline;
+}
+
+.pricing-contact a:hover {
+    color: #FF5722; /* Change link color on hover */
+}
