@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom'; // Import Router
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+        <Router basename="/Techno-Maya">  {/* Update the basename to match your GitHub repo name */}
+            <App />
+        </Router>
     </React.StrictMode>
 );
 
