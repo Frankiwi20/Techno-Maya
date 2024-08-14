@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom'; // Import Router
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Router basename="/Techno-Maya">  {/* Update the basename to match your GitHub repo name */}
+        <Router>  {/* Removed the basename */}
             <App />
         </Router>
     </React.StrictMode>
