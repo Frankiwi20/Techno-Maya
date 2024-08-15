@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import LandingPage from './Components/LandingPage';
-import AboutUs from './Components/About'; // Import the AboutUs component
+import AboutUs from './Components/About';
 import Services from './Components/Services';
 import Pricing from './Components/Pricing';
 import Testimonial from './Components/Testimonials';
@@ -12,17 +12,16 @@ import './App.css';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Techno-Maya">
             <Navbar />
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/about" element={<AboutUs />} /> {/* AboutUs Route */}
+                <Route path="/about" element={<AboutUs />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/pricing" element={<Pricing />} />
-                <Route path="/testimonials" element={<Testimonial />} /> {/* Added leading slash */}
-                <Route path="/clients" element={<Clients />} /> {/* Added leading slash */}
-                <Route path="/portfolio" element={<Portfolio />} /> {/* Added leading slash */}
-                {/* Add more routes here as you build additional pages */}
+                <Route path="/testimonials" element={<Testimonial />} />
+                <Route path="/clients" element={<Clients />} />
+                <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
         </Router>
     );
