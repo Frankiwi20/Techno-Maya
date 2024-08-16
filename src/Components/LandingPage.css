@@ -1,101 +1,179 @@
 /* LandingPage.css */
 
+/* #particles-js styles the background particle effect, ensuring it covers the entire screen */
 #particles-js {
-    position: fixed; /* Fixed position so it stays as the background */
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensure it's behind all other content */
-    background-color: Ivory; /* Match with your page background if needed */
+    position: fixed; /* Keeps the particles fixed in place even when scrolling */
+    width: 100%; /* Ensures the particles cover the entire width of the screen */
+    height: 100%; /* Ensures the particles cover the entire height of the screen */
+    top: 0; /* Aligns the particles to the top of the viewport */
+    left: 0; /* Aligns the particles to the left of the viewport */
+    z-index: -1; /* Places the particles behind all other content */
+    background-color: Ivory; /* Sets the background color, matching the page background */
 }
 
+/* .home-container styles the main container for the landing page content */
 .home-container {
-    position: relative; /* Ensure it sits above the particle effect */
-    background-color: Ivory;
-    padding: 110px;
-    border-radius: 8px;
-    border: 2px solid #B2AC88;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 1400px;
-    margin: 100px auto 40px;
-    overflow: hidden;
+    position: relative; /* Ensures the container stays above the particle effect */
+    background-color: Ivory; /* Sets the background color for the container */
+    padding: 110px; /* Adds padding inside the container, controlling the space between content and container edges */
+    border-radius: 8px; /* Rounds the corners of the container */
+    border: 2px solid #B2AC88; /* Adds a border with a specific color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    max-width: 1400px; /* Limits the maximum width of the container */
+    margin: 100px auto 40px; /* Centers the container horizontally and adds vertical margins */
+    overflow: hidden; /* Ensures no content overflows outside the container */
 }
 
+/* .home-header styles the header section of the landing page */
 .home-header {
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: 'Arial', sans-serif;
-    color: #FF5722;
+    text-align: center; /* Centers the text */
+    margin-bottom: 40px; /* Adds space below the header */
+    font-family: 'Arial', sans-serif; /* Sets the font family for the header text */
+    color: #FF5722; /* Sets the text color */
 }
 
+/* .home-content styles the main content area */
 .home-content {
-    text-align: center;
+    text-align: center; /* Centers the content */
 }
 
+/* .home-intro p styles the introductory paragraph */
 .home-intro p {
-    font-size: 1.2rem;
-    color: #FF5722;
-    transition: transform 0.3s ease-in-out;
+    font-size: 1.2rem; /* Sets the font size of the paragraph */
+    color: #FF5722; /* Sets the text color */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect for any transforms */
 }
 
+/* .cta-button styles the call-to-action button */
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: Ivory;
-    color: #FF5722;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 20px;
-    border: 2px solid #B2AC88;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: inline-block; /* Makes the button an inline-block element */
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: Ivory; /* Sets the button's background color */
+    color: #FF5722; /* Sets the button's text color */
+    border-radius: 4px; /* Rounds the corners of the button */
+    text-decoration: none; /* Removes the underline from the link */
+    margin-top: 20px; /* Adds space above the button */
+    border: 2px solid #B2AC88; /* Adds a border around the button */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Adds a smooth transition effect for hover states */
 }
 
+/* .cta-button:hover applies styles when the button is hovered */
 .cta-button:hover {
-    background-color: #B2AC88;
-    transform: scale(1.05); /* Slight scaling on hover */
+    background-color: #B2AC88; /* Changes the background color on hover */
+    transform: scale(1.05); /* Slightly increases the size of the button on hover */
 }
 
+/* .home-features styles the container for feature items */
 .home-features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    gap: 20px; /* Adding gap between feature items */
+    display: flex; /* Uses flexbox to arrange the items */
+    justify-content: space-between; /* Distributes space evenly between items */
+    margin-top: 40px; /* Adds space above the feature items */
+    gap: 20px; /* Adds space between the feature items */
 }
 
+/* .feature-item styles each individual feature item */
 .feature-item {
-    background-color: Ivory;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-basis: 30%;
-    text-align: center;
-    border: 2px solid #B2AC88;
-    outline: 4px solid #B2AC88;
-    outline-offset: -8px;
-    transition: transform 0.3s ease-in-out;
+    background-color: Ivory; /* Sets the background color for each feature item */
+    padding: 20px; /* Adds padding inside each feature item */
+    border-radius: 8px; /* Rounds the corners of each feature item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    flex-basis: 30%; /* Sets each item to take up 30% of the container width */
+    text-align: center; /* Centers the text in each feature item */
+    border: 2px solid #B2AC88; /* Adds a border around each feature item */
+    outline: 4px solid #B2AC88; /* Adds an additional border-like outline */
+    outline-offset: -8px; /* Adjusts the position of the outline */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect for hover states */
 }
 
+/* .feature-item:hover applies styles when a feature item is hovered */
 .feature-item:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
+    transform: translateY(-10px); /* Lifts the feature item slightly on hover */
 }
 
+/* .feature-item h3 styles the headers of each feature item */
 .feature-item h3 {
-    color: #FF5722;
-    margin-bottom: 10px;
+    color: #FF5722; /* Sets the text color for feature item headers */
+    margin-bottom: 10px; /* Adds space below the header */
 }
 
+/* .feature-item p styles the paragraphs in each feature item */
 .feature-item p {
-    color: #FF5722;
+    color: #FF5722; /* Sets the text color for feature item paragraphs */
 }
 
+/* .support-link styles the support link in the third feature item */
 .support-link {
-    color: #8B4513;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    color: #8B4513; /* Sets the link color */
+    text-decoration: none; /* Removes the underline from the link */
+    transition: color 0.3s ease-in-out; /* Adds a smooth transition effect for color changes */
 }
 
+/* .support-link:hover applies styles when the support link is hovered */
 .support-link:hover {
-    text-decoration: underline;
-    color: #FF5722;
+    text-decoration: underline; /* Adds an underline on hover */
+    color: #FF5722; /* Changes the color on hover */
+}
+
+/* Responsive Design for Mobile */
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 60px 20px; /* Reduces padding for smaller screens */
+        margin: 60px 20px; /* Adjusts margins to fit smaller screens */
+    }
+
+    .home-header {
+        font-size: 1.5rem; /* Decreases the header font size */
+    }
+
+    .home-intro p {
+        font-size: 1rem; /* Decreases the paragraph font size */
+    }
+
+    .cta-button {
+        padding: 8px 16px; /* Reduces padding inside the button */
+        margin-top: 15px; /* Adjusts margin above the button */
+    }
+
+    .home-features {
+        flex-direction: column; /* Stacks feature items vertically */
+        gap: 30px; /* Adds more space between stacked feature items */
+        margin-top: 20px; /* Reduces margin above the features section */
+    }
+
+    .feature-item {
+        flex-basis: 100%; /* Makes feature items take full width */
+        padding: 20px; /* Maintains padding inside feature items */
+    }
+}
+
+/* Media query for mobile phones and smaller screens */
+@media (max-width: 480px) {
+    .home-container {
+        padding: 40px 10px; /* Further reduces padding for very small screens */
+        margin: 40px 10px; /* Adjusts margins for mobile devices */
+    }
+
+    .home-header {
+        font-size: 1.2rem; /* Further decreases the header font size */
+        margin-bottom: 20px; /* Reduces space below the header */
+    }
+
+    .home-intro p {
+        font-size: 0.9rem; /* Further decreases paragraph font size */
+    }
+
+    .cta-button {
+        padding: 6px 12px; /* Reduces button padding even more */
+        margin-top: 10px; /* Reduces margin above the button */
+    }
+
+    .feature-item h3 {
+        font-size: 1.5rem; /* Decreases the font size of the feature item headers */
+    }
+
+    .feature-item p {
+        font-size: 0.9rem; /* Decreases the font size of the feature item paragraphs */
+    }
 }

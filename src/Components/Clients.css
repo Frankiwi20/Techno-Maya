@@ -1,5 +1,6 @@
 /* Clients.css */
 
+/* Wrapper container for the Clients page */
 .clients-wrapper {
     background-color: Ivory; /* Match the background color with other pages */
     padding: 60px; /* Add padding for space around content */
@@ -9,32 +10,92 @@
     max-width: 1400px; /* Control max width */
     margin: 150px auto 40px; /* Center container with auto margins */
     color: #FF5722; /* Use consistent text color */
-    text-align: center;
+    text-align: center; /* Center-align text */
 }
 
+/* Styles for the main heading */
 .clients-container h1 {
     color: #FF5722; /* Match heading color */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
+/* Styles for paragraphs */
 .clients-container p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 18px; /* Font size for better readability */
+    line-height: 1.6; /* Line height for comfortable reading */
+    margin-bottom: 20px; /* Add space below paragraphs */
     color: #FF5722; /* Match paragraph text color */
 }
 
+/* Gallery section */
 .clients-gallery {
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 40px; /* Space above the gallery */
+    padding: 20px; /* Add padding inside the gallery */
     background-color: #B2AC88; /* Contrast background for the gallery */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* "Coming Soon" section */
 .coming-soon {
-    font-size: 22px;
+    font-size: 22px; /* Larger font size for emphasis */
     color: #888; /* Greyed out text color */
-    font-style: italic;
-    margin-top: 30px;
+    font-style: italic; /* Italic style for "Coming Soon" text */
+    margin-top: 30px; /* Add space above the text */
 }
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .clients-wrapper {
+        padding: 40px 20px; /* Reduce padding for smaller screens */
+        margin: 100px 20px; /* Adjust margins to fit smaller screens */
+    }
+
+    .clients-container h1 {
+        font-size: 1.8rem; /* Decrease font size of the main heading */
+        margin-bottom: 15px; /* Adjust margin below the heading */
+    }
+
+    .clients-container p {
+        font-size: 16px; /* Decrease font size of paragraphs */
+        line-height: 1.5; /* Adjust line height for readability on smaller screens */
+    }
+
+    .clients-gallery {
+        padding: 15px; /* Reduce padding inside the gallery */
+    }
+
+    .coming-soon {
+        font-size: 20px; /* Slightly decrease font size */
+        margin-top: 25px; /* Adjust top margin */
+    }
+}
+
+/* Responsive Design for Mobile Phones and Smaller Screens */
+@media (max-width: 480px) {
+    .clients-wrapper {
+        padding: 30px 10px; /* Further reduce padding for mobile screens */
+        margin: 80px 10px; /* Adjust margins for mobile devices */
+    }
+
+    .clients-container h1 {
+        font-size: 1.5rem; /* Further decrease font size of the main heading */
+        margin-bottom: 10px; /* Reduce margin below the heading */
+    }
+
+    .clients-container p {
+        font-size: 14px; /* Further decrease font size of paragraphs */
+        line-height: 1.4; /* Adjust line height for readability on smaller screens */
+        margin-bottom: 15px; /* Reduce bottom margin */
+    }
+
+    .clients-gallery {
+        padding: 10px; /* Further reduce padding inside the gallery */
+    }
+
+    .coming-soon {
+        font-size: 18px; /* Further decrease font size */
+        margin-top: 20px; /* Adjust top margin */
+    }
+}
+

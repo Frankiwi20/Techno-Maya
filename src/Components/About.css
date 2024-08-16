@@ -1,5 +1,6 @@
 /* About.css */
 
+/* Wrapper container for the About page */
 .about-wrapper {
     background-color: Ivory; /* Ivory background to match other pages */
     padding: 60px; /* Increased padding for more space around the content */
@@ -11,21 +12,73 @@
     color: #FF5722; /* Consistent text color */
 }
 
+/* Styles for the main heading */
 .about-container h1 {
     color: #FF5722; /* Use the same heading color as other pages */
     margin-bottom: 20px;
     text-align: center;
 }
 
+/* Styles for subheadings */
 .about-container h2 {
     color: #FF5722; /* Use the same subheading color */
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+/* Styles for paragraphs */
 .about-container p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 18px; /* Font size for better readability */
+    line-height: 1.6; /* Line height for comfortable reading */
     margin-bottom: 20px;
     color: #FF5722; /* Match text color */
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .about-wrapper {
+        padding: 40px 20px; /* Reduce padding for smaller screens */
+        margin: 100px 20px; /* Adjust margins to fit smaller screens */
+    }
+
+    .about-container h1 {
+        font-size: 1.8rem; /* Decrease font size of main heading */
+        margin-bottom: 15px; /* Adjust margin below heading */
+    }
+
+    .about-container h2 {
+        font-size: 1.5rem; /* Decrease font size of subheadings */
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .about-container p {
+        font-size: 16px; /* Decrease font size of paragraphs */
+        line-height: 1.5; /* Adjust line height for readability on smaller screens */
+    }
+}
+
+/* Responsive Design for Mobile Phones and Smaller Screens */
+@media (max-width: 480px) {
+    .about-wrapper {
+        padding: 30px 10px; /* Further reduce padding for mobile screens */
+        margin: 80px 10px; /* Adjust margins for mobile devices */
+    }
+
+    .about-container h1 {
+        font-size: 1.5rem; /* Further decrease font size of main heading */
+        margin-bottom: 10px; /* Reduce margin below heading */
+    }
+
+    .about-container h2 {
+        font-size: 1.2rem; /* Further decrease font size of subheadings */
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .about-container p {
+        font-size: 14px; /* Further decrease font size of paragraphs */
+        line-height: 1.4; /* Adjust line height for readability on smaller screens */
+        margin-bottom: 15px; /* Reduce bottom margin */
+    }
 }

@@ -1,111 +1,161 @@
-/* src/components/Services.css */
-
+/* Wrapper for the entire Services section */
 .services-wrapper {
     background-color: Ivory; /* Ivory background for the wrapper */
-    padding: 60px; /* Increase padding for a bigger appearance */
+    padding: 60px; /* Padding around the content */
     border-radius: 8px; /* Rounded corners */
     border: 2px solid #B2AC88; /* Define border with color */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 1400px; /* Increase the max-width to make it wider */
+    max-width: 1400px; /* Maximum width of the container */
     margin: 100px auto 40px; /* Center the container with auto margins */
     text-align: center; /* Center align all text in the wrapper */
 }
 
+/* Container for Services content */
 .services-container {
     padding: 50px;
-    color: #FF5722; /* Use the same color for text as in LandingPage */
+    color: #FF5722; /* Text color to match the theme */
     font-family: 'Arial', sans-serif;
     background-color: Ivory; /* Background color */
 }
 
+/* Header for the Services section */
 .services-header {
     margin-top: 0px;
-    margin-bottom: 40px; /* Increase bottom margin for more spacing */
-    color: #FF5722; /* Use the same color for the header */
+    margin-bottom: 40px; /* Space below the header */
+    color: #FF5722; /* Header text color */
 }
 
+/* Styling for the Services title */
 .services-header h1 {
-    font-size: 2.5em; /* Adjust font size for a more refined appearance */
-    margin-bottom: 10px; /* Tighten spacing for a cleaner look */
-    font-weight: 600; /* Use a slightly less bold weight */
-    letter-spacing: 1px; /* Slightly increase letter spacing for clarity */
-    text-transform: uppercase; /* Use uppercase for a stronger impact */
+    font-size: 2.5em; /* Font size for the main title */
+    margin-bottom: 10px; /* Space below the title */
+    font-weight: 600; /* Font weight for the title */
+    letter-spacing: 1px; /* Spacing between letters for readability */
+    text-transform: uppercase; /* Uppercase text for emphasis */
 }
 
+/* Styling for the Services tagline/description */
 .services-header p {
-    font-size: 1.2em; /* Adjust font size for balance */
+    font-size: 1.2em; /* Font size for the paragraph */
     margin-top: 10px;
     color: #FF5722; /* Consistent text color */
-    max-width: 700px; /* Limit the width for better readability */
+    max-width: 700px; /* Maximum width for readability */
     margin-left: auto;
     margin-right: auto; /* Center the paragraph */
-    line-height: 1.4; /* Adjust line height for readability */
-    font-weight: 400; /* Make the tagline text lighter */
+    line-height: 1.4; /* Line height for readability */
+    font-weight: 400; /* Normal font weight */
 }
 
+/* Container for the list of services */
 .services-list {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of items */
-    justify-content: space-between; /* Distribute items evenly */
-    margin-bottom: 60px; /* Add space between the main services and future services */
-    gap: 20px;
+    flex-wrap: wrap; /* Allow services to wrap on smaller screens */
+    justify-content: space-between; /* Evenly distribute services */
+    margin-bottom: 60px; /* Space below the services list */
+    gap: 20px; /* Gap between services */
 }
 
+/* Individual service item styling */
 .service-item {
-    background-color: Ivory; /* Container background to match project styling */
-    padding: 30px; /* Increase padding for a more spacious look */
-    border-radius: 15px; /* Increase border-radius for a softer look */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Adjust shadow for more depth */
-    flex: 1 1 calc(33.333% - 20px); /* Adjust to fit three items per row */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #FF5722; /* Set text color to match the theme */
-    border: 2px solid #B2AC88; /* Use the same border color */
-    min-width: 300px; /* Ensure the items do not get too small */
+    background-color: Ivory; /* Background color for service items */
+    padding: 30px; /* Padding inside each service item */
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1 1 calc(33.333% - 20px); /* Flexbox for three items per row */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions on hover */
+    color: #FF5722; /* Text color to match the theme */
+    border: 2px solid #B2AC88; /* Border color */
+    min-width: 300px; /* Ensure the items don't shrink too much */
 }
 
 .service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
-    background-color: #F5F5F5; /* Subtle background color change on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    background-color: #F5F5F5; /* Background color change on hover */
 }
 
+/* Styling for the service title */
 .service-item h2 {
-    font-size: 2em; /* Increase font size for the service title */
-    margin-bottom: 20px;
-    color: #FF5722; /* Match h2 text color */
-    font-weight: bold; /* Make the service title bold */
+    font-size: 2em; /* Font size for the service title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #FF5722; /* Text color */
+    font-weight: bold; /* Bold title */
 }
 
+/* Styling for the service description */
 .service-item p {
-    font-size: 1.2em; /* Increase paragraph font size for readability */
-    color: #FF5722; /* Match paragraph text color */
-    line-height: 1.6; /* Increase line height for better readability */
+    font-size: 1.2em; /* Font size for the description */
+    color: #FF5722; /* Text color */
+    line-height: 1.6; /* Line height for readability */
 }
 
-/* Future Services Section */
+/* Styling for the Future Services section */
 .future-services {
     margin-top: 60px; /* Space above the future services */
     padding-top: 40px; /* Padding at the top */
     border-top: 2px dotted #FF5722; /* Dotted line separating future services */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the future service */
 }
 
+/* Individual future service item styling */
 .future-service-item {
-    background-color: Ivory;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: Ivory; /* Background color */
+    padding: 30px; /* Padding inside the future service item */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     width: 50%; /* Center the future service item */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #FF5722;
-    border: 2px solid #B2AC88;
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions on hover */
+    color: #FF5722; /* Text color */
+    border: 2px solid #B2AC88; /* Border color */
 }
 
 .future-service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #F5F5F5;
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    background-color: #F5F5F5; /* Background color change on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .services-header h1 {
+        font-size: 2em; /* Smaller title font size */
+    }
+
+    .services-header p {
+        font-size: 1em; /* Smaller description font size */
+    }
+
+    .service-item {
+        flex: 1 1 100%; /* Stack service items vertically */
+        min-width: auto; /* Remove minimum width */
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+
+    .future-service-item {
+        width: 100%; /* Full width for future service on mobile */
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .services-header h1 {
+        font-size: 2.2em; /* Slightly smaller title for tablets */
+    }
+
+    .services-header p {
+        font-size: 1.1em; /* Adjust font size for readability */
+    }
+
+    .service-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+    }
+
+    .future-service-item {
+        width: 75%; /* Adjust width for future service on tablets */
+    }
 }

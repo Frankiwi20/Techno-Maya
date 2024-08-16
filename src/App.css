@@ -1,27 +1,73 @@
 /* Global Styles in App.css */
 
+/* Base styles for the body of the document */
 body {
-  margin: 0;
-  background-color: Ivory; /* Sky Blue (Guatemalan Flag Blue) background */
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #FF5722;
+  margin: 0; /* Remove default margin */
+  background-color: Ivory; /* Set background color to Ivory */
+  font-family: 'Roboto', 'Arial', sans-serif; /* Set default font family */
+  font-size: 16px; /* Set base font size */
+  line-height: 1.6; /* Set line height for readability */
+  color: #FF5722; /* Set text color to match the theme */
 }
 
+/* Headings (h1 to h6) styling */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  color: #FF5722; /* Sky Blue for headings */
-
+  font-family: 'Roboto', 'Arial', sans-serif; /* Ensure consistent font family for headings */
+  color: #FF5722; /* Set heading color */
 }
 
+/* Call-to-Action (CTA) button styling */
 .cta-button {
-  background-color: Ivory; /* Sky Blue for buttons */
-  color: #FF5722;
+  background-color: Ivory; /* Set background color for buttons */
+  color: #FF5722; /* Set text color */
+  border: 2px solid #FF5722; /* Add border matching text color */
+  padding: 10px 20px; /* Add padding for a comfortable clickable area */
+  border-radius: 4px; /* Slightly rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center text inside the button */
+  text-decoration: none; /* Remove underline from the button */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
 }
 
+/* Hover effect for CTA buttons */
 .cta-button:hover {
-  background-color: #FF5722; /* Darker Sky Blue for hover */
-  color:Ivory;
+  background-color: #FF5722; /* Invert colors on hover */
+  color: Ivory; /* Invert text color on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce base font size for better readability on smaller screens */
+    line-height: 1.4; /* Adjust line height for smaller screens */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(1.5em + 1vw); /* Responsive font size for headings */
+  }
+
+  .cta-button {
+    padding: 8px 16px; /* Reduce padding for buttons on mobile */
+    font-size: 14px; /* Adjust button text size */
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px; /* Slightly reduce base font size for tablets */
+    line-height: 1.5; /* Adjust line height for tablets */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: calc(1.75em + 1vw); /* Responsive font size for headings */
+  }
+
+  .cta-button {
+    padding: 9px 18px; /* Adjust padding for buttons on tablets */
+    font-size: 15px; /* Adjust button text size */
+  }
 }
 
