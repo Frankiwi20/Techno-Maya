@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import MobileNavbar from './Components/MobileNavbar'; // Import Mobile Navbar
 import LandingPage from './Components/LandingPage';
 import AboutUs from './Components/About';
 import Services from './Components/Services';
@@ -14,6 +15,7 @@ function App() {
     return (
         <Router basename="/Techno-Maya">
             <Navbar />
+            <MobileNavbar /> {/* Include the Mobile Navbar */}
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/about" element={<AboutUs />} />

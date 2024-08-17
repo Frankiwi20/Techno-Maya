@@ -1,0 +1,65 @@
+.mobile-navbar {
+    display: none; /* Hidden by default, shown only on mobile */
+    background-color: #B2AC88;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #FF5722;
+}
+
+.mobile-navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.mobile-navbar-toggle {
+    font-size: 1.8rem;
+    color: #FF5722;
+    cursor: pointer;
+}
+
+.mobile-navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B2AC88;
+    padding: 20px;
+}
+
+.mobile-navbar-menu.open {
+    display: flex;
+}
+
+.mobile-navbar-item {
+    margin: 10px 0;
+}
+
+.mobile-navbar-item a {
+    color: #FF5722;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Media Query to show Mobile Navbar only on mobile devices */
+@media (max-width: 768px) {
+    .mobile-navbar {
+        display: flex;
+    }
+}
+
