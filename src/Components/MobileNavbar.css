@@ -1,10 +1,8 @@
-/* MobileNavbar.css */
-
 /* Mobile Navbar Wrapper */
 .mobile-navbar {
     background-color: #B2AC88; /* Same as the desktop background */
     padding: 10px 20px;
-    display: flex;
+    display: none; /* Hide by default */
     justify-content: space-between; /* Space between logo and toggle button */
     align-items: center;
     position: fixed;
@@ -83,3 +81,23 @@
     color: #fff; /* White text on hover */
 }
 
+/* Media Queries to show/hide mobile and desktop navbars */
+@media (max-width: 768px) {
+    .mobile-navbar {
+        display: flex; /* Show mobile navbar on small screens */
+    }
+
+    .navbar {
+        display: none; /* Hide desktop navbar on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-navbar {
+        display: none; /* Hide mobile navbar on large screens */
+    }
+
+    .navbar {
+        display: flex; /* Show desktop navbar on large screens */
+    }
+}
