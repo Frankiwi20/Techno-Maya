@@ -2,7 +2,7 @@
 .mobile-navbar {
     background-color: #B2AC88; /* Same as the desktop background */
     padding: 10px 20px;
-    display: none; /* Hide by default */
+    display: flex;
     justify-content: space-between; /* Space between logo and toggle button */
     align-items: center;
     position: fixed;
@@ -12,9 +12,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobile Navbar Logo Container */
+.mobile-navbar-logo-container {
+    flex-grow: 1;
+    text-align: center; /* Center the logo in the middle */
+}
+
 /* Mobile Navbar Logo */
 .mobile-navbar-logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
     font-size: 1.5rem;

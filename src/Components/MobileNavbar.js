@@ -12,13 +12,15 @@ const MobileNavbar = () => {
     return (
         <>
             <nav className="mobile-navbar">
-                <Link to="/" className="mobile-navbar-logo">
-                    <img src={`${process.env.PUBLIC_URL}/Techno_Maya.jpg`} alt="Tech Maya Logo" />
-                    <span>Techno Maya</span>
-                </Link>
                 <button className="mobile-navbar-toggle" onClick={toggleSidebar}>
                     &#9776; {/* Hamburger icon */}
                 </button>
+                <div className="mobile-navbar-logo-container">
+                    <Link to="/" className="mobile-navbar-logo">
+                        <img src={`${process.env.PUBLIC_URL}/Techno_Maya.jpg`} alt="Tech Maya Logo" />
+                        <span>Techno Maya</span>
+                    </Link>
+                </div>
             </nav>
             <div className={`mobile-sidebar ${isOpen ? 'active' : ''}`}>
                 <ul>
@@ -36,3 +38,4 @@ const MobileNavbar = () => {
 };
 
 export default MobileNavbar;
+
