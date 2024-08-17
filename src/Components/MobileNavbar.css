@@ -1,46 +1,53 @@
-/* General Mobile Styling */
+/* General Desktop Styling */
+.navbar {
+    display: flex; /* Ensure desktop navbar is visible */
+}
 
+/* Hide the mobile sidebar and toggle button on desktop */
+@media (min-width: 769px) {
+    .mobile-navbar-button,
+    .sidebar {
+        display: none; /* Hide mobile elements on desktop */
+    }
+}
+
+/* Mobile specific styling */
 @media (max-width: 768px) {
-    /* Hide the desktop navbar on mobile */
     .navbar {
-        display: none;
+        display: none; /* Hide the desktop navbar on mobile */
     }
 
-    /* Sidebar menu button styling */
     .mobile-navbar-button {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 20px;
-        right: 20px; /* Position on the right */
+        right: 20px;
         z-index: 1000;
-        background-color: #FF5722; /* Button color */
-        color: Ivory; /* Text color */
+        background-color: #FF5722;
+        color: Ivory;
         padding: 10px 15px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    /* Sidebar menu styling */
     .sidebar {
-        display: none; /* Hidden by default */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 75%;
         height: 100%;
-        background-color: Ivory; /* Background color for sidebar */
+        background-color: Ivory;
         padding: 20px;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
 
-    /* Sidebar open state */
     .sidebar.open {
-        display: block;
+        display: block; /* Show sidebar when open */
     }
 
-    /* Sidebar links */
     .sidebar ul {
         list-style: none;
         padding: 0;
@@ -52,16 +59,15 @@
     }
 
     .sidebar ul li a {
-        color: #FF5722; /* Link color */
+        color: #FF5722;
         text-decoration: none;
         font-size: 1.2em;
     }
 
     .sidebar ul li a:hover {
-        color: #8B4513; /* Hover color */
+        color: #8B4513;
     }
 
-    /* Sidebar close button */
     .sidebar .close-btn {
         position: absolute;
         top: 20px;
@@ -74,19 +80,3 @@
         cursor: pointer;
     }
 }
-
-/* Ensure that the desktop styles remain unchanged */
-@media (min-width: 769px) {
-    .mobile-navbar-button {
-        display: none; /* Hide the mobile navbar button on desktop */
-    }
-
-    .sidebar {
-        display: none; /* Ensure sidebar is hidden on desktop */
-    }
-
-    .navbar {
-        display: flex; /* Show desktop navbar */
-    }
-}
-

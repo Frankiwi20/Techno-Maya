@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import MobileNavbar from './Components/MobileNavbar'; // Import Mobile Navbar
@@ -12,10 +12,20 @@ import Portfolio from './Components/Portfolio';
 import './App.css';
 
 function App() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <Router basename="/Techno-Maya">
-            <Navbar />
-            <MobileNavbar /> {/* Include the Mobile Navbar */}
+            {isMobile ? <MobileNavbar /> : <Navbar />}
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/about" element={<AboutUs />} />
