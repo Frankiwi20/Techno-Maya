@@ -1,65 +1,92 @@
-.mobile-navbar {
-    display: none; /* Hidden by default, shown only on mobile */
-    background-color: #B2AC88;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+/* General Mobile Styling */
 
-.mobile-navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mobile-navbar-logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #FF5722;
-}
-
-.mobile-navbar-logo img {
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.mobile-navbar-toggle {
-    font-size: 1.8rem;
-    color: #FF5722;
-    cursor: pointer;
-}
-
-.mobile-navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #B2AC88;
-    padding: 20px;
-}
-
-.mobile-navbar-menu.open {
-    display: flex;
-}
-
-.mobile-navbar-item {
-    margin: 10px 0;
-}
-
-.mobile-navbar-item a {
-    color: #FF5722;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Media Query to show Mobile Navbar only on mobile devices */
 @media (max-width: 768px) {
-    .mobile-navbar {
-        display: flex;
+    /* Hide the desktop navbar on mobile */
+    .navbar {
+        display: none;
+    }
+
+    /* Sidebar menu button styling */
+    .mobile-navbar-button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; /* Position on the right */
+        z-index: 1000;
+        background-color: #FF5722; /* Button color */
+        color: Ivory; /* Text color */
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Sidebar menu styling */
+    .sidebar {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: Ivory; /* Background color for sidebar */
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    /* Sidebar open state */
+    .sidebar.open {
+        display: block;
+    }
+
+    /* Sidebar links */
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul li a {
+        color: #FF5722; /* Link color */
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .sidebar ul li a:hover {
+        color: #8B4513; /* Hover color */
+    }
+
+    /* Sidebar close button */
+    .sidebar .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #FF5722;
+        color: Ivory;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* Ensure that the desktop styles remain unchanged */
+@media (min-width: 769px) {
+    .mobile-navbar-button {
+        display: none; /* Hide the mobile navbar button on desktop */
+    }
+
+    .sidebar {
+        display: none; /* Ensure sidebar is hidden on desktop */
+    }
+
+    .navbar {
+        display: flex; /* Show desktop navbar */
     }
 }
 
