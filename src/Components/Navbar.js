@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
                     <img src={`${process.env.PUBLIC_URL}/Techno_Maya.jpg`} alt="Tech Maya Logo" className="navbar-logo-img" />
-                    <span className="navbar-logo-text">Techno Maya</span> {/* Wrap the text with a span */}
+                    <span className="navbar-logo-text">Techno Maya</span>
                 </Link>
                 <ul className="navbar-menu">
                     <li className="navbar-item">

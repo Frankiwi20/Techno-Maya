@@ -1,82 +1,75 @@
-/* General Desktop Styling */
-.navbar {
-    display: flex; /* Ensure desktop navbar is visible */
+/* Mobile Navbar Styles */
+
+.mobile-navbar {
+    background-color: #B2AC88; /* Match with desktop background */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none; /* Hidden by default, shown only on mobile */
 }
 
-/* Hide the mobile sidebar and toggle button on desktop */
-@media (min-width: 769px) {
-    .mobile-navbar-button,
-    .sidebar {
-        display: none; /* Hide mobile elements on desktop */
-    }
+.mobile-navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Mobile specific styling */
+.mobile-navbar-logo {
+    font-size: 1.5rem;
+    color: #FF5722;
+    text-decoration: none;
+}
+
+.mobile-navbar-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #FF5722;
+    cursor: pointer;
+}
+
+.mobile-navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #B2AC88; /* Same background as desktop */
+    color: #FF5722;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-navbar-menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #FF5722; /* Consistent color */
+}
+
+.mobile-navbar-menu li:last-child {
+    border-bottom: none;
+}
+
+.mobile-navbar-menu a {
+    color: #FF5722;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.mobile-navbar-menu a:hover {
+    background-color: #FF5722;
+    color: Ivory;
+}
+
+/* Media Query: Show mobile navbar on small screens */
 @media (max-width: 768px) {
-    .navbar {
-        display: none; /* Hide the desktop navbar on mobile */
-    }
-
-    .mobile-navbar-button {
+    .mobile-navbar {
         display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        background-color: #FF5722;
-        color: Ivory;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
     }
+}
 
-    .sidebar {
+/* Hide mobile navbar on larger screens */
+@media (min-width: 769px) {
+    .mobile-navbar {
         display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 75%;
-        height: 100%;
-        background-color: Ivory;
-        padding: 20px;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-
-    .sidebar.open {
-        display: block; /* Show sidebar when open */
-    }
-
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .sidebar ul li {
-        margin-bottom: 20px;
-    }
-
-    .sidebar ul li a {
-        color: #FF5722;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-
-    .sidebar ul li a:hover {
-        color: #8B4513;
-    }
-
-    .sidebar .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: #FF5722;
-        color: Ivory;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
     }
 }

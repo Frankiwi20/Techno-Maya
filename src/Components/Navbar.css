@@ -1,51 +1,48 @@
-/* Overall navbar container */
+/* Desktop Navbar Styles */
+
 .navbar {
-    background-color: #B2AC88; /* Background color */
+    background-color: #B2AC88;
     padding: 10px 20px;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    position: fixed; /* Fix navbar at the top */
+    justify-content: center;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    animation: slideDown 0.6s ease-in-out; /* Slide down animation on page load */
+    animation: slideDown 0.6s ease-in-out;
 }
 
-/* Inner container that holds all navbar content, creating the "bubble" effect */
 .navbar-container {
-    background-color: Ivory; /* White background for the bubble */
+    background-color: Ivory;
     padding: 10px 20px;
-    border-radius: 50px; /* Rounded edges for the bubble */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1400px; /* Increased max-width for better spacing */
+    max-width: 1400px;
 }
 
-/* Logo section styling */
 .navbar-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #FF5722; /* Text color */
-    margin-right: 20px; /* Add some space between logo and menu */
-    position: relative; /* Needed for the underline effect */
+    color: #FF5722;
+    margin-right: 20px;
+    position: relative;
     transition: color 0.3s ease;
 }
 
-/* Styling for the logo image */
 .navbar-logo-img {
-    height: 50px; /* Set logo image size */
+    height: 50px;
     margin-right: 10px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
 }
 
-/* Underline effect for the "Techno Maya" text only */
 .navbar-logo-text {
-    position: relative; /* Needed for the underline effect */
+    position: relative;
 }
 
 .navbar-logo-text::after {
@@ -54,7 +51,7 @@
     width: 0%;
     height: 2px;
     background-color: #FF5722;
-    bottom: -5px; /* Adjust the position of the underline */
+    bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease;
@@ -64,25 +61,22 @@
     width: 100%;
 }
 
-/* Menu container to align items horizontally */
 .navbar-menu {
     list-style: none;
     display: flex;
-    flex-grow: 1; /* Allow menu to take up available space */
-    justify-content: center; /* Center menu items horizontally */
+    flex-grow: 1;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
-/* Individual menu items */
 .navbar-item {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-/* Link styling for the menu items */
 .navbar-link {
-    color: #FF5722; /* Text color */
+    color: #FF5722;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 5px 10px;
@@ -107,30 +101,28 @@
     width: 100%;
 }
 
-/* Contact Us button styling */
 .navbar-button {
-    background-color: Ivory; /* White background to match the bubble */
-    color: #FF5722; /* Text color */
+    background-color: Ivory;
+    color: #FF5722;
     padding: 10px 20px;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     text-decoration: none;
-    border: 2px solid #FF5722; /* Border to match text color */
-    margin-left: auto; /* Push the button to the far right */
-    margin-right: 20px; /* Add some space on the right side */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    border: 2px solid #FF5722;
+    margin-left: auto;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-button:hover {
-    background-color: #FF5722; /* Invert colors on hover */
+    background-color: #FF5722;
     color: #fff;
     border-color: #fff;
-    transform: scale(1.05); /* Slight scaling effect on hover */
+    transform: scale(1.05);
 }
 
-/* Ensure content does not overlap with navbar */
-.home-container {
-    margin-top: 100px; /* Adjust based on the height of the navbar */
+/* Media Query: Hide desktop navbar on mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
 }
-
-
-
