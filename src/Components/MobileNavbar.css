@@ -14,12 +14,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Center the Techno Maya logo */
+/* Mobile Navbar Logo */
 .mobile-navbar-logo {
-    flex-grow: 1; /* Allow the logo to grow and center */
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the logo text */
     text-decoration: none;
     font-size: 1.5rem;
     color: #FF5722; /* Match text color */
@@ -39,8 +37,6 @@
     font-size: 1.8rem;
     cursor: pointer;
     outline: none;
-    position: absolute;
-    right: 20px; /* Position it to the right */
 }
 
 /* Sidebar Menu */
@@ -86,3 +82,4 @@
     background-color: #FF5722; /* Invert colors on hover */
     color: #fff; /* White text on hover */
 }
+
