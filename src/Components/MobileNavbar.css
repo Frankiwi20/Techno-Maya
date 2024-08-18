@@ -1,9 +1,9 @@
 /* Mobile Navbar Wrapper */
 .mobile-navbar {
-    background-color: #B2AC88; /* Same as the desktop background */
+    background-color: #B2AC88; /* Match desktop background */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Space between toggle button and logo */
+    justify-content: space-between; /* Space between logo and toggle button */
     align-items: center;
     position: fixed;
     top: 0;
@@ -12,11 +12,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjusted flex order for the items */
+/* Mobile Navbar Logo Container */
 .mobile-navbar-logo-container {
     flex-grow: 1;
-    text-align: center; /* Center the logo in the middle */
-    order: 2; /* Move logo to the second position */
+    text-align: center; /* Center the logo */
 }
 
 /* Mobile Navbar Logo */
@@ -42,21 +41,23 @@
     font-size: 1.8rem;
     cursor: pointer;
     outline: none;
-    order: 1; /* Move toggle button to the first position */
+    position: relative;
+    z-index: 1003; /* Ensure toggle button is above sidebar */
 }
 
 /* Sidebar Menu */
 .mobile-sidebar {
-    background-color: #B2AC88; /* Match with navbar background */
+    background-color: #B2AC88; /* Match navbar background */
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; /* Ensure the sidebar starts from the left edge of the screen */
     height: 100%;
     width: 250px; /* Sidebar width */
-    transform: translateX(-250px); /* Initially hide the sidebar off-screen to the left */
+    transform: translateX(-100%); /* Initially hide the sidebar off-screen to the left */
     transition: transform 0.3s ease; /* Smooth transition */
     padding-top: 60px; /* Space for the navbar */
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 1002; /* Ensure the sidebar is above other elements */
 }
 
 /* Sidebar Menu when active */
