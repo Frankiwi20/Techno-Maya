@@ -3,7 +3,7 @@
     background-color: #B2AC88; /* Same as the desktop background */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Space between logo and toggle button */
+    justify-content: space-between; /* Space between toggle button and logo */
     align-items: center;
     position: fixed;
     top: 0;
@@ -12,10 +12,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile Navbar Logo Container */
+/* Adjusted flex order for the items */
 .mobile-navbar-logo-container {
     flex-grow: 1;
     text-align: center; /* Center the logo in the middle */
+    order: 2; /* Move logo to the second position */
 }
 
 /* Mobile Navbar Logo */
@@ -41,6 +42,7 @@
     font-size: 1.8rem;
     cursor: pointer;
     outline: none;
+    order: 1; /* Move toggle button to the first position */
 }
 
 /* Sidebar Menu */
