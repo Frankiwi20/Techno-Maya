@@ -9,6 +9,10 @@ const MobileNavbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeSidebar = () => {
+        setIsOpen(false);
+    };
+
     return (
         <>
             <nav className="mobile-navbar">
@@ -24,18 +28,19 @@ const MobileNavbar = () => {
             </nav>
             <div className={`mobile-sidebar ${isOpen ? 'active' : ''}`}>
                 <ul>
-                    <li><Link to="/services" onClick={toggleSidebar}>Services</Link></li>
-                    <li><Link to="/clients" onClick={toggleSidebar}>Clients</Link></li>
-                    <li><Link to="/pricing" onClick={toggleSidebar}>Pricing</Link></li>
-                    <li><Link to="/portfolio" onClick={toggleSidebar}>Portfolio</Link></li>
-                    <li><Link to="/testimonials" onClick={toggleSidebar}>Testimonials</Link></li>
-                    <li><Link to="/about" onClick={toggleSidebar}>About Us</Link></li>
-                    <li><Link to="/contact" onClick={toggleSidebar}>Contact Us</Link></li>
+                    <li><Link to="/services" onClick={closeSidebar}>Services</Link></li>
+                    <li><Link to="/clients" onClick={closeSidebar}>Clients</Link></li>
+                    <li><Link to="/pricing" onClick={closeSidebar}>Pricing</Link></li>
+                    <li><Link to="/portfolio" onClick={closeSidebar}>Portfolio</Link></li>
+                    <li><Link to="/testimonials" onClick={closeSidebar}>Testimonials</Link></li>
+                    <li><Link to="/about" onClick={closeSidebar}>About Us</Link></li>
+                    <li><Link to="/contact" onClick={closeSidebar}>Contact Us</Link></li>
                 </ul>
             </div>
+            {/* Overlay that closes the sidebar when clicked */}
+            {isOpen && <div className="mobile-sidebar-overlay" onClick={closeSidebar}></div>}
         </>
     );
 };
 
 export default MobileNavbar;
-

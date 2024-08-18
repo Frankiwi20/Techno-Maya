@@ -41,8 +41,9 @@
     font-size: 1.8rem;
     cursor: pointer;
     outline: none;
-    position: relative;
     z-index: 1003; /* Ensure toggle button is above sidebar */
+    position: absolute; /* Make sure the button stays in place */
+    left: 10px; /* Position the button on the left side */
 }
 
 /* Sidebar Menu */
@@ -58,6 +59,7 @@
     padding-top: 60px; /* Space for the navbar */
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
     z-index: 1002; /* Ensure the sidebar is above other elements */
+    opacity: 0.95; /* Make the sidebar slightly opaque */
 }
 
 /* Sidebar Menu when active */
