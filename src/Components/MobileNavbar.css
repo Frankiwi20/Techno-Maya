@@ -52,16 +52,16 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px; /* Increase width for better visibility */
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    width: 250px; /* Sidebar width */
+    transform: translateX(-250px); /* Initially hide the sidebar off-screen to the left */
+    transition: transform 0.3s ease; /* Smooth transition */
     padding-top: 60px; /* Space for the navbar */
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Sidebar Menu when active */
 .mobile-sidebar.active {
-    transform: translateX(0);
+    transform: translateX(0); /* Slide the sidebar into view */
 }
 
 /* Sidebar Links */
