@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Techno-Maya/static/css/main.4875eb24.css",
-    "main.js": "/Techno-Maya/static/js/main.b1badd1c.js",
+    "main.css": "/Techno-Maya/static/css/main.5cd44e12.css",
+    "main.js": "/Techno-Maya/static/js/main.73bfff6a.js",
     "static/js/453.9301851d.chunk.js": "/Techno-Maya/static/js/453.9301851d.chunk.js",
     "index.html": "/Techno-Maya/index.html",
-    "main.4875eb24.css.map": "/Techno-Maya/static/css/main.4875eb24.css.map",
-    "main.b1badd1c.js.map": "/Techno-Maya/static/js/main.b1badd1c.js.map",
+    "main.5cd44e12.css.map": "/Techno-Maya/static/css/main.5cd44e12.css.map",
+    "main.73bfff6a.js.map": "/Techno-Maya/static/js/main.73bfff6a.js.map",
     "453.9301851d.chunk.js.map": "/Techno-Maya/static/js/453.9301851d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4875eb24.css",
-    "static/js/main.b1badd1c.js"
+    "static/css/main.5cd44e12.css",
+    "static/js/main.73bfff6a.js"
   ]
 }
