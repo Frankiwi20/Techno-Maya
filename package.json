@@ -2,7 +2,7 @@
   "name": "maya",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Frankiwi20.github.io/Techno-Maya",
+  "homepage": "https://tech-maya.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
