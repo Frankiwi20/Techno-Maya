@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Techno-Maya/static/css/main.5cd44e12.css",
-    "main.js": "/Techno-Maya/static/js/main.73bfff6a.js",
-    "static/js/453.9301851d.chunk.js": "/Techno-Maya/static/js/453.9301851d.chunk.js",
-    "index.html": "/Techno-Maya/index.html",
-    "main.5cd44e12.css.map": "/Techno-Maya/static/css/main.5cd44e12.css.map",
-    "main.73bfff6a.js.map": "/Techno-Maya/static/js/main.73bfff6a.js.map",
-    "453.9301851d.chunk.js.map": "/Techno-Maya/static/js/453.9301851d.chunk.js.map"
+    "main.css": "/static/css/main.5cd44e12.css",
+    "main.js": "/static/js/main.374a396d.js",
+    "static/js/453.9301851d.chunk.js": "/static/js/453.9301851d.chunk.js",
+    "index.html": "/index.html",
+    "main.5cd44e12.css.map": "/static/css/main.5cd44e12.css.map",
+    "main.374a396d.js.map": "/static/js/main.374a396d.js.map",
+    "453.9301851d.chunk.js.map": "/static/js/453.9301851d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5cd44e12.css",
-    "static/js/main.73bfff6a.js"
+    "static/js/main.374a396d.js"
   ]
 }
