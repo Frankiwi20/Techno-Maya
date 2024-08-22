@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
     return (
-        <Router basename="/Techno-Maya">
+        <Router> {/* Removed the basename prop */}
             <Navbar />  {/* Desktop Navbar */}
             <MobileNavbar />  {/* Mobile Navbar */}
             <Routes>
