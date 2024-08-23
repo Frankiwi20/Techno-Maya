@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt file for tech-maya.com
+# Prevents all web crawlers from accessing any part of the site
+
 User-agent: *
-Disallow:
+Disallow: /
