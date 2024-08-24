@@ -27,6 +27,9 @@ const MobileNavbar = () => {
                 </div>
             </nav>
             <div className={`mobile-sidebar ${isOpen ? 'active' : ''}`}>
+                <button className="mobile-sidebar-close" onClick={closeSidebar}>
+                    &times; {/* Close icon */}
+                </button>
                 <ul>
                     <li><Link to="/services" onClick={closeSidebar}>Services</Link></li>
                     <li><Link to="/clients" onClick={closeSidebar}>Clients</Link></li>

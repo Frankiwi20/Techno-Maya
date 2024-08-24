@@ -53,13 +53,26 @@
     top: 0;
     left: 0; /* Ensure the sidebar starts from the left edge of the screen */
     height: 100%;
-    width: 250px; /* Sidebar width */
+    width: 100%; /* Sidebar takes up the full screen width */
     transform: translateX(-100%); /* Initially hide the sidebar off-screen to the left */
     transition: transform 0.3s ease; /* Smooth transition */
     padding-top: 60px; /* Space for the navbar */
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
     z-index: 1002; /* Ensure the sidebar is above other elements */
     opacity: 0.95; /* Make the sidebar slightly opaque */
+}
+
+/* Sidebar Close Button */
+.mobile-sidebar-close {
+    background: none;
+    border: none;
+    color: #FF5722; /* Match close button color */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1004; /* Ensure close button is above sidebar content */
 }
 
 /* Sidebar Menu when active */
@@ -75,13 +88,20 @@
 }
 
 .mobile-sidebar li {
-    margin: 15px 0;
+    margin: 20px 0; /* Increased margin for better spacing */
+    border-bottom: 1px solid #FF5722; /* Border separating items */
+    padding-bottom: 10px;
+}
+
+/* Last item without a border */
+.mobile-sidebar li:last-child {
+    border-bottom: none;
 }
 
 .mobile-sidebar a {
     color: #FF5722; /* Match with desktop link color */
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased font size for better readability */
     padding: 10px 20px;
     display: block;
     transition: background-color 0.3s ease;
@@ -90,6 +110,17 @@
 .mobile-sidebar a:hover {
     background-color: #FF5722; /* Invert colors on hover */
     color: #fff; /* White text on hover */
+}
+
+/* Overlay for closing sidebar */
+.mobile-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000;
 }
 
 /* Media Queries to show/hide mobile and desktop navbars */
