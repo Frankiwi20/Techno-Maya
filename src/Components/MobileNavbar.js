@@ -7,10 +7,16 @@ const MobileNavbar = () => {
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
+        if (!isOpen) {
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        } else {
+            document.body.style.overflow = ''; // Re-enable background scrolling
+        }
     };
 
     const closeSidebar = () => {
         setIsOpen(false);
+        document.body.style.overflow = ''; // Re-enable background scrolling
     };
 
     return (
@@ -47,3 +53,4 @@ const MobileNavbar = () => {
 };
 
 export default MobileNavbar;
+
