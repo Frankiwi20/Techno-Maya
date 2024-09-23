@@ -17,18 +17,21 @@
     border-radius: 8px;
     border: 2px solid #B2AC88;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 1400px; /* Reduced from 1400px to fit better on smaller screens */
+    max-width: 1400px;
     margin: 100px auto 40px;
     overflow: hidden;
     animation: fadeIn 1.5s ease-in-out;
+    font-family: 'Roboto', sans-serif; /* Ensuring font consistency */
 }
 
 /* .home-header styles the header section of the landing page */
 .home-header {
     text-align: center;
     margin-bottom: 40px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Make the header bold for emphasis */
     color: #FF5722;
+    font-size: 3rem; /* Adjust for a balanced look */
     animation: slideInFromTop 1s ease-in-out;
 }
 
@@ -36,11 +39,13 @@
 .home-content {
     text-align: center;
     animation: fadeInUp 1.2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* .home-intro p styles the introductory paragraph */
 .home-intro p {
     font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif; /* Apply consistent font */
     color: #FF5722;
     transition: transform 0.3s ease-in-out;
     animation: fadeIn 2s ease-in-out;
@@ -51,6 +56,8 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: Ivory;
+    font-family: 'Roboto', sans-serif; /* Ensure font consistency */
+    font-weight: 500; /* Medium weight for better readability */
     color: #FF5722;
     border-radius: 4px;
     text-decoration: none;
@@ -88,6 +95,7 @@
     outline-offset: -8px;
     transition: transform 0.3s ease-in-out;
     animation: fadeIn 2.5s ease-in-out;
+    font-family: 'Roboto', sans-serif; /* Apply consistent font */
 }
 
 /* .feature-item:hover applies styles when a feature item is hovered */
@@ -98,16 +106,22 @@
 /* .feature-item h3 styles the headers of each feature item */
 .feature-item h3 {
     color: #FF5722;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold for emphasis */
     margin-bottom: 10px;
 }
 
 /* .feature-item p styles the paragraphs in each feature item */
 .feature-item p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     color: #FF5722;
 }
 
 /* .support-link styles the support link in the third feature item */
 .support-link {
+    font-family: 'Roboto', sans-serif;
     color: #8B4513;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -180,20 +194,23 @@
     .home-container {
         padding: 50px 15px;
         margin: 50px 15px;
-        max-width: 90%; /* Adjust container width */
+        max-width: 90%;
     }
 
     .home-header {
         font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     .home-intro p {
         font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     .cta-button {
         padding: 8px 16px;
         margin-top: 15px;
+        font-family: 'Roboto', sans-serif;
     }
 
     .home-features {
@@ -213,28 +230,33 @@
     .home-container {
         padding: 30px 10px;
         margin: 30px 10px;
-        max-width: 95%; /* Adjust container width */
+        max-width: 95%;
     }
 
     .home-header {
         font-size: 1.2rem;
         margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
     }
 
     .home-intro p {
         font-size: 0.9rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     .cta-button {
         padding: 6px 12px;
         margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
     }
 
     .feature-item h3 {
         font-size: 1.3rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     .feature-item p {
         font-size: 0.9rem;
+        font-family: 'Roboto', sans-serif;
     }
 }

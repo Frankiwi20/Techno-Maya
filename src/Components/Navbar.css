@@ -2,42 +2,46 @@
 
 .navbar {
     background-color: #B2AC88;
-    padding: 5px 20px;
+    padding: 5px 0;  /* Reduced top and bottom padding to slim down the height */
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%; /* Ensures the navbar takes up the full width */
+    left: 0;
+    right: 0;
     z-index: 1000;
     animation: slideDown 0.6s ease-in-out;
 }
 
 .navbar-container {
     background-color: Ivory;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding to optimize height */
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100%;  /* This ensures it takes full width */
     max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden; /* Ensures content stays within bounds */
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Slightly reduced text size for logo */
     color: #FF5722;
-    margin-right: 20px;
+    margin-right: 15px; /* Adjusted margin to fit better */
     position: relative;
     transition: color 0.3s ease;
 }
 
 .navbar-logo-img {
-    height: 50px;
-    margin-right: 10px;
+    height: 40px; /* Reduced height of the logo to fit the slimmer navbar */
+    margin-right: 8px; /* Adjusted spacing between logo and text */
     border-radius: 50%;
 }
 
@@ -71,15 +75,15 @@
 }
 
 .navbar-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px; /* Reduced margins between items */
+    margin-right: 15px;
 }
 
 .navbar-link {
     color: #FF5722;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 5px 10px;
+    font-size: 1rem; /* Slightly reduced text size for links */
+    padding: 5px 8px; /* Adjusted padding for better balance */
     position: relative;
     display: inline-block;
     transition: color 0.3s ease;
@@ -104,12 +108,12 @@
 .navbar-button {
     background-color: Ivory;
     color: #FF5722;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding for a slimmer button */
     border-radius: 50px;
     text-decoration: none;
     border: 2px solid #B2AC88;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 15px; /* Adjusted margins */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 

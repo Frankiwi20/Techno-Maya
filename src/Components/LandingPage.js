@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Typewriter from 'typewriter-effect';
 import './LandingPage.css';
 
 const LandingPage = () => {
 
     useEffect(() => {
-        // Initialize particles.js
+        // Initialize particles.js for background particle effect
         window.particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -37,41 +38,60 @@ const LandingPage = () => {
             <div id="particles-js"></div>
             <motion.div
                 className="home-container"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0 }}  // Fade in effect for the entire container
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
                 <header className="home-header">
-                    <h1>Techno Maya</h1>
-                    <p>Bridging cultural significance with modern web solutions</p>
+                    {/* Typewriter effect for the main tagline */}
+                    <Typewriter
+                        options={{
+                            strings: ['Bridging cultural significance with modern web solutions'],  // Text to type
+                            autoStart: true,
+                            loop: false,  // No looping, plays once
+                            delay: 50,  // Faster typing speed
+                        }}
+                    />
+
+                    {/* Typewriter effect for the paragraph */}
+                    <Typewriter
+                        options={{
+                            strings: ['Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
+                            autoStart: true,
+                            loop: false,  // No looping, plays once
+                            delay: 60,  // Speed of typing (slightly slower than tagline)
+                        }}
+                    />
                 </header>
+
                 <motion.div
                     className="home-content"
-                    initial={{ x: '-100vw' }}
-                    animate={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 50 }}
+                    initial={{ x: '-100vw' }}  // Start from the left (off-screen)
+                    animate={{ x: 0 }}  // Slide into view
+                    transition={{ type: 'spring', stiffness: 50 }}  // Spring animation
                 >
                     <div className="home-intro">
                         <p>Empowering your digital presence with a blend of technology and cultural heritage.</p>
                         <Link to="/services" className="cta-button">Explore Our Services</Link>
                     </div>
+
                     <motion.div
                         className="home-features"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5, duration: 1 }}
+                        initial={{ opacity: 0 }}  // Start invisible
+                        animate={{ opacity: 1 }}  // Fade in
+                        transition={{ delay: 0.5, duration: 1 }}  // Delayed fade-in effect
                     >
                         <div className="feature-item">
                             <h3>Innovative Web Design</h3>
-                            <p>Our design team specializes in creating visually appealing and user-friendly websites that not only look great but also resonate with your target audience. We blend modern aesthetics with cultural elements to ensure your website stands out while maintaining a deep connection with your audience.</p>
+                            <p>Our design team specializes in creating visually appealing and user-friendly websites that resonate with your target audience.</p>
                         </div>
                         <div className="feature-item">
                             <h3>Optimized Performance</h3>
-                            <p>In the fast-paced digital world, performance is key. We ensure your website is optimized for speed and efficiency, resulting in lower bounce rates and higher user engagement. From image compression to server-side optimizations, we cover all aspects to deliver a seamless user experience.</p>
+                            <p>We ensure your website is optimized for speed and efficiency, resulting in lower bounce rates and higher engagement.</p>
                         </div>
                         <div className="feature-item">
                             <h3>24/7 Support</h3>
-                            <p>We understand that your website is a crucial part of your business, which is why our support team is available around the clock. Whether it's a minor tweak or an urgent fix, we're here to assist you anytime, ensuring your website is always up and running smoothly.</p>
+                            <p>Our support team is available around the clock, ensuring your website is always running smoothly.</p>
                             <Link to="/support" className="support-link">Contact Support</Link>
                         </div>
                     </motion.div>
