@@ -48,7 +48,7 @@ const LandingPage = () => {
                         options={{
                             strings: ['Bridging cultural significance with modern web solutions'],  // Text to type
                             autoStart: true,
-                            loop: false,  // No looping, plays once
+                            loop: true,  // No looping, plays once
                             delay: 50,  // Faster typing speed
                         }}
                     />
@@ -71,7 +71,7 @@ const LandingPage = () => {
                     transition={{ type: 'spring', stiffness: 50 }}  // Spring animation
                 >
                     <div className="home-intro">
-                        <p>Empowering your digital presence with a blend of technology and cultural heritage.</p>
+                        <p>Let us make the design decisions, so that you dont have to.</p>
                         <Link to="/services" className="cta-button">Explore Our Services</Link>
                     </div>
 
