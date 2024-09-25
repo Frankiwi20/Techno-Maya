@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import './LandingPage.css';
 
 const LandingPage = () => {
+    // State to control when to show the second typewriter
+    const [showSecondTypewriter, setShowSecondTypewriter] = useState(false);
 
     useEffect(() => {
         // Initialize particles.js for background particle effect
@@ -46,22 +48,27 @@ const LandingPage = () => {
                     {/* Typewriter effect for the main tagline */}
                     <Typewriter
                         options={{
-                            strings: ['Bridging cultural significance with modern web solutions'],  // Text to type
+                            strings: ['Bridging cultural significance with modern web solutions', 'Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
                             autoStart: true,
-                            loop: true,  // No looping, plays once
+                            loop: true ,  // No looping, plays once
                             delay: 50,  // Faster typing speed
+                            onComplete: () => {  // When typing is complete, show the second typewriter
+                                setShowSecondTypewriter(true);  // Trigger the second typewriter after this one finishes
+                            },
                         }}
                     />
 
-                    {/* Typewriter effect for the paragraph */}
-                    <Typewriter
-                        options={{
-                            strings: ['Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
-                            autoStart: true,
-                            loop: false,  // No looping, plays once
-                            delay: 60,  // Speed of typing (slightly slower than tagline)
-                        }}
-                    />
+                    {/* Conditionally render the second typewriter */}
+                    {showSecondTypewriter && (
+                        <Typewriter
+                            options={{
+                                strings: ['Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
+                                autoStart: true,
+                                loop: false,  // No looping, plays once
+                                delay: 60,  // Speed of typing for second typewriter
+                            }}
+                        />
+                    )}
                 </header>
 
                 <motion.div
