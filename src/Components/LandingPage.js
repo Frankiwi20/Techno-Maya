@@ -5,8 +5,8 @@ import Typewriter from 'typewriter-effect';
 import './LandingPage.css';
 
 const LandingPage = () => {
-    // State to control when to show the second typewriter
-    const [showSecondTypewriter, setShowSecondTypewriter] = useState(false);
+    const [showIntro, setShowIntro] = useState(false);
+    const [showFeatures, setShowFeatures] = useState(false);
 
     useEffect(() => {
         // Initialize particles.js for background particle effect
@@ -48,40 +48,38 @@ const LandingPage = () => {
                     {/* Typewriter effect for the main tagline */}
                     <Typewriter
                         options={{
-                            strings: ['Bridging cultural significance with modern web solutions', 'Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
+                            strings: ['Bridging cultural significance with modern web solutions'],  // Text to type
                             autoStart: true,
-                            loop: true ,  // No looping, plays once
+                            loop: false,  // No looping, plays once
                             delay: 50,  // Faster typing speed
-                            onComplete: () => {  // When typing is complete, show the second typewriter
-                                setShowSecondTypewriter(true);  // Trigger the second typewriter after this one finishes
-                            },
+                            onComplete: () => setShowIntro(true),  // Show intro content after typing completes
                         }}
                     />
-
-                    {/* Conditionally render the second typewriter */}
-                    {showSecondTypewriter && (
-                        <Typewriter
-                            options={{
-                                strings: ['Empowering your digital presence with a blend of technology and cultural heritage.'],  // Text to type
-                                autoStart: true,
-                                loop: false,  // No looping, plays once
-                                delay: 60,  // Speed of typing for second typewriter
-                            }}
-                        />
-                    )}
                 </header>
 
-                <motion.div
-                    className="home-content"
-                    initial={{ x: '-100vw' }}  // Start from the left (off-screen)
-                    animate={{ x: 0 }}  // Slide into view
-                    transition={{ type: 'spring', stiffness: 50 }}  // Spring animation
-                >
-                    <div className="home-intro">
-                        <p>Let us make the design decisions, so that you dont have to.</p>
-                        <Link to="/services" className="cta-button">Explore Our Services</Link>
-                    </div>
+                {showIntro && (
+                    <motion.div
+                        className="home-content"
+                        initial={{ x: '-100vw' }}  // Start from the left (off-screen)
+                        animate={{ x: 0 }}  // Slide into view
+                        transition={{ type: 'spring', stiffness: 50 }}  // Spring animation
+                    >
+                        <div className="home-intro">
+                            <Typewriter
+                                options={{
+                                    strings: ['Let us make the design decisions, so that you dont have to.'],  // Text to type
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 60,  // Speed of typing for the intro content
+                                    onComplete: () => setShowFeatures(true),  // Show features content after typing completes
+                                }}
+                            />
+                            <Link to="/services" className="cta-button">Explore Our Services</Link>
+                        </div>
+                    </motion.div>
+                )}
 
+                {showFeatures && (
                     <motion.div
                         className="home-features"
                         initial={{ opacity: 0 }}  // Start invisible
@@ -89,20 +87,64 @@ const LandingPage = () => {
                         transition={{ delay: 0.5, duration: 1 }}  // Delayed fade-in effect
                     >
                         <div className="feature-item">
-                            <h3>Innovative Web Design</h3>
-                            <p>Our design team specializes in creating visually appealing and user-friendly websites that resonate with your target audience.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['Innovative Web Design'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 60,  // Typing speed for feature title
+                                }}
+                            />
+                            <Typewriter
+                                options={{
+                                    strings: ['Our design team specializes in creating visually appealing and user-friendly websites that resonate with your target audience.'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 70,  // Typing speed for feature description
+                                }}
+                            />
                         </div>
+
                         <div className="feature-item">
-                            <h3>Optimized Performance</h3>
-                            <p>We ensure your website is optimized for speed and efficiency, resulting in lower bounce rates and higher engagement.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['Optimized Performance'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 60,
+                                }}
+                            />
+                            <Typewriter
+                                options={{
+                                    strings: ['We ensure your website is optimized for speed and efficiency, resulting in lower bounce rates and higher engagement.'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 70,
+                                }}
+                            />
                         </div>
+
                         <div className="feature-item">
-                            <h3>24/7 Support</h3>
-                            <p>Our support team is available around the clock, ensuring your website is always running smoothly.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['24/7 Support'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 60,
+                                }}
+                            />
+                            <Typewriter
+                                options={{
+                                    strings: ['Our support team is available around the clock, ensuring your website is always running smoothly.'],
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 70,
+                                }}
+                            />
                             <Link to="/support" className="support-link">Contact Support</Link>
                         </div>
                     </motion.div>
-                </motion.div>
+                )}
             </motion.div>
         </>
     );
